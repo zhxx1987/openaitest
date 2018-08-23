@@ -36,6 +36,8 @@ def make_bullet_env(env_id, seed, reward_scale=1.0):
     """
     Create a wrapped, monitored gym.Env for MuJoCo.
     """
+
+
     rank = MPI.COMM_WORLD.Get_rank()
     myseed = seed  + 1000 * rank if seed is not None else None
     set_global_seeds(myseed)

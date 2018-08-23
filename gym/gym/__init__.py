@@ -11,6 +11,7 @@ from gym.core import Env, GoalEnv, Space, Wrapper, ObservationWrapper, ActionWra
 from gym.envs import make, spec
 from gym import logger
 
+
 def undo_logger_setup():
     warnings.warn("gym.undo_logger_setup is deprecated. gym no longer modifies the global logging configuration")
 

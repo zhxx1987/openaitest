@@ -2,10 +2,11 @@
 <robot name="frame">
   <link name="frameLink">
     <inertial>
-      <origin rpy="1.57 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
        <mass value="5.0"/>
        <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
     </inertial>
+
     <visual>
       <origin rpy="1.57 0 0" xyz="0 0 0"/>
       <geometry>
@@ -15,6 +16,7 @@
       		<color rgba="0.9 0.4 0. 1" />
 	</material>
     </visual>
+
      <visual>
       <origin rpy="1.57 0 0" xyz="0 0 0"/>
       <geometry>
@@ -24,6 +26,7 @@
                 <color rgba="0.9 0.4 0. 1" />
         </material>
     </visual>
+
     <collision>
       <origin rpy="1.57 0 0" xyz="0 0 0"/>
       <geometry>
@@ -31,7 +34,9 @@
       </geometry>
     </collision>
 <collision>
+
       <origin rpy="1.57 0 0" xyz="0 0 0"/>
+
       <geometry>
        <mesh filename="files/frame_scaled_left.stl"/>
       </geometry>
@@ -74,7 +79,7 @@
 
 <link name="frontWheelLink">
     <inertial>
-      <origin rpy="1.57 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
        <mass value="1.0"/>
        <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
     </inertial>
@@ -108,7 +113,7 @@
 
 <link name="backWheelLink">
     <inertial>
-      <origin rpy="1.57 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
        <mass value="1.0"/>
        <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
     </inertial>

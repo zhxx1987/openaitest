@@ -8,6 +8,16 @@ register(
     max_episode_steps=1000,
     reward_threshold=2500.0
 )
+register(
+    id='HumanBulletEnv-v0',
+    entry_point='gym.envs.bullet:HumanoidBulletEnv',
+    max_episode_steps=1000
+)
+register(
+    id='BikeBulletEnv-v0',
+    entry_point='gym.envs.bullet:BikeBulletEnvV2',
+    max_episode_steps=10000
+)
 
 # Algorithmic
 # ----------------------------------------

@@ -5,16 +5,16 @@ six
 pyglet>=1.2.0
 
 [all]
-mujoco_py>=1.50
-imageio
-PyOpenGL
-PyOpenGL
 atari_py>=0.1.1
 Pillow
 PyOpenGL
+box2d-py>=2.3.4
+PyOpenGL
 mujoco_py>=1.50
 imageio
-box2d-py>=2.3.4
+PyOpenGL
+mujoco_py>=1.50
+imageio
 
 [atari]
 atari_py>=0.1.1

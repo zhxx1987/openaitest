@@ -28,6 +28,13 @@ gym/envs/box2d/bipedal_walker.py
 gym/envs/box2d/car_dynamics.py
 gym/envs/box2d/car_racing.py
 gym/envs/box2d/lunar_lander.py
+gym/envs/bullet/__init__.py
+gym/envs/bullet/env_bases.py
+gym/envs/bullet/gym_locomotion_envs.py
+gym/envs/bullet/robot_bases.py
+gym/envs/bullet/robot_locomotors.py
+gym/envs/bullet/scene_abstract.py
+gym/envs/bullet/scene_stadium.py
 gym/envs/classic_control/__init__.py
 gym/envs/classic_control/acrobot.py
 gym/envs/classic_control/cartpole.py
@@ -38,8 +45,6 @@ gym/envs/classic_control/rendering.py
 gym/envs/classic_control/assets/clockwise.png
 gym/envs/mujoco/__init__.py
 gym/envs/mujoco/ant.py
-gym/envs/mujoco/env_bases.py
-gym/envs/mujoco/gym_locomotion_envs.py
 gym/envs/mujoco/half_cheetah.py
 gym/envs/mujoco/hopper.py
 gym/envs/mujoco/humanoid.py
@@ -49,10 +54,6 @@ gym/envs/mujoco/inverted_pendulum.py
 gym/envs/mujoco/mujoco_env.py
 gym/envs/mujoco/pusher.py
 gym/envs/mujoco/reacher.py
-gym/envs/mujoco/robot_bases.py
-gym/envs/mujoco/robot_locomotors.py
-gym/envs/mujoco/scene_abstract.py
-gym/envs/mujoco/scene_stadium.py
 gym/envs/mujoco/striker.py
 gym/envs/mujoco/swimmer.py
 gym/envs/mujoco/thrower.py

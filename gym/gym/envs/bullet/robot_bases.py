@@ -138,7 +138,7 @@ class URDFBasedRobot(XmlBasedRobot):
 
 	def __init__(self, model_urdf, robot_name, action_dim, obs_dim, basePosition=[0, 0, 0], baseOrientation=[0, 0, 0, 1], fixed_base=False, self_collision=False):
 		XmlBasedRobot.__init__(self, robot_name, action_dim, obs_dim, self_collision)
-
+		print('get here ------------------------------------------------------')
 		self.model_urdf = model_urdf
 		self.basePosition = basePosition
 		self.baseOrientation = baseOrientation
@@ -149,6 +149,9 @@ class URDFBasedRobot(XmlBasedRobot):
 		self.ordered_joints = []
 
 		print(os.path.join(os.path.dirname(__file__), "data", self.model_urdf))
+		
+		print(os.path.dirname(__file__))
+
 
 		if self.self_collision:
 			self.parts, self.jdict, self.ordered_joints, self.robot_body = self.addToScene(self._p, 

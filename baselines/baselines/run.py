@@ -73,6 +73,7 @@ def train(args, extra_args):
         env=env,  
         seed=seed,
         total_timesteps=total_timesteps,
+        log_interval = 1000,
         **alg_kwargs
     )
 
@@ -109,6 +110,7 @@ def build_env(args):
             env = SubprocVecEnv([lambda: make_bullet_env(env_id, seed + i if seed is not None else None, args.reward_scale) for i in range(args.num_env)])
         else:
             env = DummyVecEnv([lambda: make_bullet_env(env_id, seed, args.reward_scale)])
+    #################################################################################
 
     elif env_type == 'atari':
         if alg == 'acer':
